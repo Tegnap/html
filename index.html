@@ -1,130 +1,187 @@
 <!DOCTYPE html>
 <html lang="hu">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Órarend</title>
-    <style>
-        body{
-            display: table-cell;
-            vertical-align: middle;
-            text-align: center;
-        }
-        table {
-            text-align: center;
-            border: 1px solid black;
-        }
-        tr{
-            text-align: center;
-            border: 1px solid black;
-        }
-        th{
-            text-align: center;
-            border: 1px solid black;
-        }
-        td{
-            text-align: center;
-            border: 1px solid black;
-        }
-        caption{
-            font-size: larger;
-        }
-        table {
-        height: 400px;
-        width: 600px;
-        position: fixed;
-        top: 30%;
-        left: 43%;
-        margin-top: -100px;
-        margin-left: -200px;
-        }  
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <table >
-        <Caption>11.B</Caption>
-        <tr>
-            <th></th>
-            <th>Hetfő</th>
-            <th>Kedd</th>
-            <th>Szerda</th>
-            <th>Csütörtök</th>
-            <th>Péntek</th>
+    <div class="hero"> 
+        <div class="cube"></div>
+        <div class="cube"></div>
+        <div class="cube"></div>
+        <div class="cube"></div>
+        <div class="cube"></div>
+        <div class="cube"></div>
+      </div>
+      
 
+      <table>
+          <caption>Órarend</caption>
+        <tr>
+          <th></th>
+          <th>Hétfő</th>
+          <th>Kedd</th>
+          <th>Szerda</th>
+          <th>Csütörtök</th>
+          <th>Péntek</th>
         </tr>
         <tr>
-            <td>0</td>
-            <td></td>
-            <td>Angol</td>
-            <td></td>
-            <td></td>
-            <td>Web programozas</td>
+          <td class="tooltip">0.
+            <span class="tooltiptext">7:15-8:00</span>
+            </td>
+          <td>---</td>
+          <td class="tooltip">Angol
+          <span class="tooltiptext">Almásiné Jobbágy Nóra Katalin<br>25. terem</span>
+          </td>
+          <td>---</td>
+          <td>---</td>
+          <td class="tooltip">Webprogramozás
+          <span class="tooltiptext">Farkas Zoltán<br>202. terem</span>
+          </td>
         </tr>
         <tr>
-            <td>1</td>
-            <td>Magyar nyelv és irod</td>
-            <td>Magyar</td>
-            <td>Asztali alkalmazások</td>
-            <td></td>
-            <td>Web programozas</td>
+          <td class="tooltip">1.
+            <span class="tooltiptext">8:00-8:45</span>
+            </td>
+          <td class="tooltip">Magyar
+            <span class="tooltiptext">Halászné Kiss Melinda Ottilia<br>213. terem</span>
+            </td>
+            <td class="tooltip">Magyar
+              <span class="tooltiptext">Halászné Kiss Melinda Ottilia<br>213. terem</span>
+              </td>
+              <td class="tooltip">Asztalki alk. fejl.
+                <span class="tooltiptext">Szilágyi Bertalan<br>310. terem</span>
+                </td>
+          <td>---</td>
+          <td class="tooltip">Webprogramozás
+          <span class="tooltiptext">Farkas Zoltán<br>202. terem</span>
+          </td>
         </tr>
         <tr>
-            <td>2</td>
-            <td>Fizika</td>
-            <td>Magyar nyelv és irod</td>
-            <td>Asztali alkalmazások</td>
-            <td>Töri</td>
-            <td>Web programozas</td>
+          <td class="tooltip">2.
+            <span class="tooltiptext">8:55-9:40</span>
+            </td>
+          <td class="tooltip">Fizika
+            <span class="tooltiptext">Péterffy Gáspár Mátyás<br>25. terem</span>
+            </td>
+          <td class="tooltip">Magyar
+            <span class="tooltiptext">Halászné Kiss Melinda Ottilia<br>213. terem</span>
+            </td>
+            <td class="tooltip">Asztalki alk. fejl.
+              <span class="tooltiptext">Szilágyi Bertalan<br>310. terem</span>
+              </td>
+          <td class="tooltip">Történelem
+            <span class="tooltiptext">Vasók Krisztián<br>213. terem</span>
+            </td> 
+            <td class="tooltip">Webprogramozás
+              <span class="tooltiptext">Farkas Zoltán<br>202. terem</span>
+              </td>
         </tr>
         <tr>
-            <td>3</td>
-            <td>Töri</td>
-            <td>Fizika</td>
-            <td>Asztali alkalmazások</td>
-            <td>Matek</td>
-            <td>Adatbázis-kezelés</td>
+          <td class="tooltip">3.
+            <span class="tooltiptext">9:50-10:35</span>
+            </td>
+          <td class="tooltip">Történelem
+            <span class="tooltiptext">Vasók Krisztián<br>213. terem</span>
+            </td>
+            <td class="tooltip">Fizika
+              <span class="tooltiptext">Péterffy Gáspár Mátyás<br>25. terem</span>
+              </td>
+          <td class="tooltip">Asztalki alk. fejl.
+            <span class="tooltiptext">Szilágyi Bertalan<br>310. terem</span>
+            </td>
+          <td class="tooltip">Matek
+            <span class="tooltiptext">Várnai Virág<br>111. terem</span>
+            </td>
+            <td class="tooltip">Adatbázis kezelés
+              <span class="tooltiptext">Szilágyi Bertalan<br>104. terem</span>
+              </td>
+        </tr>  
+        <tr>
+          <td class="tooltip">4.
+            <span class="tooltiptext">10:45-11:30</span>
+            </td>
+          <td class="tooltip">Matek
+            <span class="tooltiptext">Várnai Virág<br>111. terem</span>
+            </td>
+          <td class="tooltip">Testnevelés
+            <span class="tooltiptext">Deményi Norbert Szabolcs<br>Tornaterem</span>
+            </td>
+            <td class="tooltip">Szakmai Angol
+              <span class="tooltiptext">Sándor Mária<br>211. terem</span>
+              </td>
+          <td class="tooltip">Angol
+            <span class="tooltiptext">Almásiné Jobbágy Nóra Katalin<br>211. terem</span>
+            </td>
+            <td class="tooltip">Adatbázis kezelés
+              <span class="tooltiptext">Szilágyi Bertalan<br>104. terem</span>
+              </td>
+        <tr>
+          <td class="tooltip">5.
+            <span class="tooltiptext">11:40-12:25</span>
+            </td>
+          <td class="tooltip">Angol
+            <span class="tooltiptext">Almásiné Jobbágy Nóra Katalin<br>211. terem</span>
+            </td>
+            <td class="tooltip">Történelem
+              <span class="tooltiptext">Vasók Krisztián<br>213. terem</span>
+              </td>
+              <td class="tooltip">Szakmai Angol
+                <span class="tooltiptext">Sándor Mária<br>211. terem</span>
+                </td>
+          <td class="tooltip">Osztályfőnöki
+            <span class="tooltiptext">Halászné Kiss Melinda Ottilia<br>113. terem</span>
+            </td>
+          <td class="tooltip">IKT projektmunka
+            <span class="tooltiptext">Paár Norbert<br>113. terem</span>
+            </td>
+        <tr>
+          <td class="tooltip">6.
+            <span class="tooltiptext">12:45-13:30</span>
+            </td>
+          <td>---</td>
+          <td class="tooltip">Matek
+            <span class="tooltiptext">Várnai Virág<br>111. terem</span>
+            </td>
+            <td class="tooltip">IKT projektmunka
+              <span class="tooltiptext">Paár Norbert<br>203. terem</span>
+              </td>
+          <td class="tooltip">Magyar
+            <span class="tooltiptext">Halászné Kiss Melinda Ottilia<br>213. terem</span>
+            </td>
+            <td class="tooltip">IKT projektmunka
+              <span class="tooltiptext">Paár Norbert<br>113. terem</span>
+              </td>
+        <tr>
+          <td class="tooltip">7.
+            <span class="tooltiptext">13:35-14:20</span>
+            </td>
+          <td>---</td>
+          <td class="tooltip">Matek
+            <span class="tooltiptext">Várnai Virág<br>111. terem</span>
+            </td>
+            <td class="tooltip">IKT projektmunka
+              <span class="tooltiptext">Paár Norbert<br>203. terem</span>
+              </td>
+          <td class="tooltip">Testnevelés
+            <span class="tooltiptext">Deményi Norbert Szabolcs><br>Tornaterem</span>
+            </td>
+          <td>---</td>    
         </tr>
         <tr>
-            <td>4</td>
-            <td>Matek</td>
-            <td>Tesi</td>
-            <td>Szakmai Angol</td>
-            <td>Angol</td>
-            <td>Adatbázis-kezelés</td>
-        </tr>
-        <tr>
-            <td>5</td>
-            <td>Angol</td>
-            <td>Töri</td>
-            <td>IKT projektmunka II</td>
-            <td>Of</td>
-            <td>IKT projektmunka II</td>
-        </tr>
-        <tr>
-            <td>6</td>
-            <td></td>
-            <td>Matek</td>
-            <td>IKT projektmunka II</td>
-            <td>Magyar nyelv és irod</td>
-            <td>IKT projektmunka II</td>
-        </tr>
-        <tr>
-            <td>7</td>
-            <td></td>
-            <td>Matek</td>
-            <td>IKT projektmunka II</td>
-            <td>Tesi</td>
-            <td></td>
-        </tr>
-        <tr>
-            <td>8</td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td>Tesi</td>
-            <td></td>
+          <td class="tooltip">8.
+            <span class="tooltiptext">14:25-15:10</span>
+            </td>
+            <td>---</td>
+            <td>---</td>
+            <td>---</td>
+            <td class="tooltip">Testnevelés
+              <span class="tooltiptext">Deményi Norbert Szabolcs<br>Tornaterem</span>
+              </td>
+            <td>---</td>
         </tr>
     </table>
+
 </body>
 </html>
